@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин мороженого "Глейси"</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <header class="main-header">
+  <nav class="main-navigation">
+  <a class="main-header-logo" href="#" img src="#"
+  width=" " height="">
+  </a>
+  <ul class="site-navigaion">
+  <li><a href "price.html">Каталог</a></li>
+  <li><a href "delivery.html">Доставка и оплата</a></li>
+  <li><a href "about.html">О компании</a></li>
+
+  </ul>
+  <ul class="user-navigation">
+  <li class="search"></li>
+  <li class="login-link">Вход</li>
+  <li class="basket">Корзина</li>
+  </ul>
+  </nav>
+  </header>
+  <main>
+    <section>
+      <!--Здесь будет раздел "featured items"-->
+    </section>
+
+    <section class="why-choose-gllacy">
+      <h1>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого
+        собственного производства на развес</h1>
+        <p class="arguments">
+          <ul>
+            <li>Все наше мороженое изготавливается на собственном производстве,
+              с использованием современного оборудования и проверенных временем технологий.</li>
+              <li>Для приготовления мороженого используются настоящие сливки и молоко
+                высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального,
+                экологически чистого сырья.</li>
+              <li>Закупка ингридиентов производится только у проверенных фермерских хозяйств
+                и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+                <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+                  мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+          </ul>
+        </p>
+    </section>
+<section class="blog">
+  <h3>Новое в нашем блоге</h3>
+  <p class="blog-link"><a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+</p>
+</section>
+<section class="subscribe">
+  <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+  Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+  <!--здесь будет форма-->
+</p>
+</section>
+</section class="adress-map">
+<!--Здесь будет карта и адрес-->
+</section>
+</main>
+  <footer class="main-footer">
+  <ul class="social-buttons">
+  <li> <a class="social-button" href="#">Twitter</a></li>
+    <li><a class="social-button" href="#">Instagram</a></li>
+       <li><a class="social-button" href="#">Facebook</a></li>
+       <li><a class="social-button" href="#">В контакте</a></li>
+       <!--здесь может быть еще одна кнопка<li><a class="social-button" href="#"></a></li>-->
+</ul>
+<ul class="business-information">
+  <li class="for suppliers"><img src="#"><a href="#">Для поставщиков</a></li>
+   <li class="manufacture"><a href="#">О производстве</a></li>
+   <li class="documents"><a href="#">Наши документы</a></li>
+   <li class="eco-standards"><a href="#">Экологические стандарты</a></li>
+ </ul>
+<p class="footer-copyright">
+  <img src="#">
+  Сделано в <a href="https://htmlacademy.ru">HTML Academy </a>
+</p>
+  </footer>
+  </body>
