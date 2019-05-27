@@ -25,7 +25,19 @@
       <ul class="user-navigation">
         <li class="search"></li>
         <li class="login-link">Вход</li>
-        <li class="basket">2 товара</li>
+        <li class="basket">2 товара
+          <form class="basket" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="basket">Корзина</label>
+              <input class="basket" id="basket" type="text" name="basket">
+              Пломбир с апельсиновым джемом 1,5 кгx200 р 300 р
+              Клубничный пломбир с присыпкой из белого шоколада 1,5 кг x 300 р 450 р
+              Итого: 750 р
+            </p>
+          </form>
+          <a href="#">Оформить заказ</a>
+        </li>
+
       </ul>
 
       <p class="call-us">
@@ -244,7 +256,7 @@
     </ul>
     <p class="footer-copyright">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" alt="Html Academy" width="108" height="39"></a>
+        <img src="img/svg/logo-htmlacademy.svg" alt="Html Academy" width="108" height="39"></a>
       Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
     </p>
   </footer>
