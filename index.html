@@ -29,7 +29,7 @@
 
     <ul class="user-navigation">
       <li class="search">
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
           <p>
             <label class="visually-hidden" for="search">Форма поиска</label>
             <input class="search" id="search" type="text" name="search" placeholder="Что ищем?">
@@ -45,14 +45,17 @@
            <input class="login-input" id="user-email" type="email" name="user-email" placeholder="Электронная почта">
           </p>
           <p>
-            <label class="visually-hidden" for='user-password'>Пароль</label>
+            <label class="visually-hidden" for="user-password">Пароль</label>
             <input class="login-input" id="user-password" type="password" name="password" placeholder="Пароль">
           </p>
+          <div class="register-button">
           <button class="button" type="submit">Войти</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
+          <ul class="register">
+            <li><a href="#">Забыли пароль?</a></li>
+            <li><a href="#">Новая регистрация</a></li>
+          </ul>
+          </div>
+         </form>
       </li>
       <li class="basket">Корзина</li>
     </ul>
@@ -62,20 +65,21 @@
      <section class="modal-subscribe">
        <h2>Мы обязательно вам ответим!</h2>
        <h2 class="visually hidden">Форма для обратной связи</h2>
-       <form class="subscribe" method="post" action="https://echo.htmlacademy.ru">
+       <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset>
           <p>
-            <label class="visually-hidden" for='user-name'>Ваше имя</label>
+            <label class="visually-hidden" for="user-name">Ваше имя</label>
             <input class="name" id="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
           </p>
           <p>
             <label class="visually-hidden" for="email">Электронная почта</label>
-            <input class="email" id="email" type="email"name="user-email" placeholder="Ваша почта для ответа?">
+            <input class="email" id="email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
           </p>
           <p>
             <label class="visually-hidden" for="user-question">Ваш вопрос</label>
-            <input class="user-question" id="user-question" type="textarea"
-            name="user-question" placeholder="Напишите что-нибудь">
+            <textarea class="user-question" id="user-question"
+            name="user-question" rows="4" placeholder="Напишите что-нибудь">
+            </textarea>
           </p>
         </fieldset>
       </form>
@@ -114,13 +118,13 @@
         <h2 class="visually-hidden">Подписка на наши новости</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =></p>
-        <form class="subscribe" method="post" action="https://echo.htmlacademy.ru">
+        <form class="list-subscribe-form" method="post" action="https://echo.htmlacademy.ru">
         <p>
           <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
           <input class="email" id="subscribe-email" type="text" name="user-email" placeholder="Электронная почта">
         </p>
-      </form<
-      <button class="button" type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </article>
 
     <section class="adress-map">
@@ -132,7 +136,7 @@
 
     <footer class="main-footer">
       <ul class="social-list">
-       <li> <a class="social-button" href="#">Twitter</a></li>
+       <li><a class="social-button" href="#">Twitter</a></li>
        <li><a class="social-button" href="#">Instagram</a></li>
        <li><a class="social-button" href="#">Facebook</a></li>
        <li><a class="social-button" href="#">В контакте</a></li>
