@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height:22px;
+  text-align: left;
+  font-weight: normal;
+  color: #ffffff;
+
+  background: #849d8f;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+   font:inherit;
+   text-decoration: none;
+}
+/*поставила button в начало, как в стилизации Барбершопа, правильно ли?*/
+.button {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+  text-align:center;
+  color: : #fefefe;
+
+}
+.site-navigation {
+  font: inherit;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+}
+
+.user-navigation {
+  font:inherit;
+  font-size: 14px;
+}
+
+.about-us {
+  color:#323232;
+
+  background-color: /*где его можно взять? кроме фотошопа*/;
+
+  background-image: url("img/about-background.png");
+  background-size: width: 1146px; height: 306px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.about-us h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.about-us .about-us-list {
+  line-height: 22px;
+}
+
+.blog {
+  color: #5a5a5a;
+  font-size: 16px;
+
+  /*background-color:*/
+  background-image: url("img/blog.jpg");
+  background-size: 560px; height: 220px;
+
+  border-radius: 15px;
+}
+.blog h3 {
+  font:inherit;
+  color:#323232;
+}
+
+.blog a {
+  font:inherit;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.subscribe {
+  font:inherit;
+  font-color: #5a5a5a;
+
+  background-size: width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
