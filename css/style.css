@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  line-height:22px;
+  line-height: 22px;
   text-align: left;
   font-weight: normal;
   color: #ffffff;
@@ -17,42 +17,71 @@ img {
 }
 
 a {
-   font:inherit;
    text-decoration: none;
 }
-/*поставила button в начало, как в стилизации Барбершопа, правильно ли?*/
+
 .button {
   font-family: inherit;
   font-size: 18px;
-  line-height: 24px;
   font-weight: bold;
   font-style: normal;
+
+  line-height: 24px;
   text-align:center;
   color: : #fefefe;
+  border:none;
 
 }
-.site-navigation {
+.main-navigation a {
   font: inherit;
   font-weight: bold;
-  font-style: normal;
+
   line-height: 18px;
   letter-spacing: normal;
+  text-decoration:underline;
+  text-align:left;
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus, {
+  background-color: #ffbc9e
 }
 
 .user-navigation {
   font:inherit;
   font-size: 14px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  font: inherit;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+/*здесь ссылка упорно не делается белой, что не так*/
+.shopping-cart-item a {
+  color: #ffffff;
 }
 
 .about-us {
   color:#323232;
 
-  background-color: /*где его можно взять? кроме фотошопа*/;
+  /*background-color: ;*/
 
-  background-image: url("img/about-background.png");
+  /*background-image: url("...img/about-background.png");
   background-size: width: 1146px; height: 306px;
   background-repeat: no-repeat;
-  border-radius: 15px;
+  border-radius: 15px;*/
 }
 
 .about-us h3 {
@@ -65,16 +94,18 @@ a {
   line-height: 22px;
 }
 
+
 .blog {
   color: #5a5a5a;
   font-size: 16px;
 
-  /*background-color:*/
-  background-image: url("img/blog.jpg");
+  /*background-color:;*/
+  /*background-image: url("...img/blog.jpg");
   background-size: 560px; height: 220px;
 
-  border-radius: 15px;
+  border-radius: 15px;*/
 }
+
 .blog h3 {
   font:inherit;
   color:#323232;
@@ -93,8 +124,39 @@ a {
   font:inherit;
   font-color: #5a5a5a;
 
-  background-size: width: 549px;
+  /*background-size: width: 549px;
   height: 211px;
   border-radius: 10px;
-  background-color: #f8f7f4;
+  background-color: #f8f7f4;*/
+}
+
+.list-subscribe-form {
+  width: 368px;
+  height: 44px;
+  border-radius: 5px;
+  border: solid 1px;
+  background-color: #ffffff;
+
+}
+
+.social-button {
+  text-align: center;
+}
+
+.business-information a {
+  font-size: 13px;
+  font-stretch: normal;
+  line-height: 18;
+  text-align: left;
+  color: #ffffff;
+}
+
+.for-suppliers {
+ font-weight: bold;
+}
+
+.footer-copyright a {
+  font-size: 13px;
+  color: #ffffff;
+  text-align:left;
 }
