@@ -25,17 +25,16 @@ a {
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
-
   line-height: 24px;
   text-align:center;
   color: : #fefefe;
+
   border:none;
 
 }
 .main-navigation a {
   font: inherit;
   font-weight: bold;
-
   line-height: 18px;
   letter-spacing: normal;
   text-decoration:underline;
@@ -60,7 +59,7 @@ a {
   font-size: 14px;
 }
 
-h1 {
+.page-title {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
@@ -107,8 +106,8 @@ h1 {
 }
 
 .blog h3 {
-  font:inherit;
-  color:#323232;
+  font: inherit;
+  color: #323232;
 }
 
 .blog a {
@@ -121,7 +120,7 @@ h1 {
 }
 
 .subscribe {
-  font:inherit;
+  font: inherit;
   font-color: #5a5a5a;
 
   /*background-size: width: 549px;
