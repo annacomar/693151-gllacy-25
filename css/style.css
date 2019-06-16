@@ -32,6 +32,28 @@ a {
   border:none;
 
 }
+
+.main-header {
+  display:flex;
+  margin-bottom: 10 px;
+  /*-------- Временно для сетки ---------------- */
+  min-height: 64px;
+}
+
+
+.main-header-logo {
+  display: flex;
+  width: 154px;
+  height: 64px;
+  margin-right: auto;
+}
+
+
+.main-navigation {
+  display:flex;
+  justify-content: space-between;
+}
+
 .main-navigation a {
   font: inherit;
   font-weight: bold;
@@ -48,12 +70,21 @@ a {
 }
 
 .user-navigation {
+  display:flex;
+  justify-content: space-between;
+
+  margin-left:auto;
   font:inherit;
   font-size: 14px;
   color: #ffffff;
 }
 
 .breadcrumbs {
+  display: flex;
+  width: auto;
+  margin: auto;
+  /*вот здесь вопрос, как лучше планировать сетку, я правильно думаю, что здесь должно быть рядом два блока, один для breadcrumbs, другой для часов работы и телефона?*/
+
   font: inherit;
   line-height: 16px;
   font-size: 14px;
@@ -72,7 +103,28 @@ a {
   color: #ffffff;
 }
 
+.catalog {
+  width: auto;
+  justify-content: space-between;
+  margin: auto; /* или задавать по 27 справа и слева?*/
+  margin-top: 40 px;
+
+}
+
+.catalog-image-wrapper {
+  display: flex;
+  width: 267 px;
+  margin: auto; /* ну вот тут начались вопросы, как их строить в ряд и сверху вниз: с помощью first-chil, nth-child?*/
+}
+
 .about-us {
+  display:flex;
+  width: 1146 px;
+  margin-top: auto;
+  margin-bottom: 40px;
+  margin-right: 27px; /*не знаю, как лучше, писать здесь auto или задавать фиксированное значение?*/
+  maring-left: 27px;
+
   color:#323232;
 
   /*background-color: ;*/
@@ -93,8 +145,18 @@ a {
   line-height: 22px;
 }
 
+.blog-subscribe-wrapper {
+ display: flex;
+ justify-content: space-between;
+ margin-right: 27px; /* тот же вопрос: auto или фиксированное значение?*/
+ maring-left: 27px;
+}
+
 
 .blog {
+  display: flex;
+  width: 560 px;
+
   color: #5a5a5a;
   font-size: 16px;
 
@@ -120,6 +182,9 @@ a {
 }
 
 .subscribe {
+  display: flex;
+  width: 560 px;
+
   font: inherit;
   font-color: #5a5a5a;
 
@@ -138,8 +203,28 @@ a {
 
 }
 
+.main-footer {
+  display: flex;
+  width: auto;
+  margin-top: auto;
+
+}
+.social-list {
+  display: flex;
+  width: 180 px; /*ширину этих трех элементов я считала приблизительно, сложила ширину небольших элементов вместе*/
+  justify-content: space-between;
+  margin-right: auto;
+}
+
 .social-button {
   text-align: center;
+  width: 32 px;
+  height: 32 px;
+}
+
+.business-information {
+  display: flex;
+  width: 760 px;
 }
 
 .business-information a {
@@ -152,6 +237,13 @@ a {
 
 .for-suppliers {
  font-weight: bold;
+}
+
+.footer-copyright {
+  display: flex;
+  width: 190 px;
+  margin-left: auto;
+  /*margin-right: ??? блок прижался к самому краю, нужно справа маргин задавать? Или общий маргин блоку задавать?*/
 }
 
 .footer-copyright a {
