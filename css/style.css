@@ -1,3 +1,4 @@
+/*Global*/
 body {
   margin: 0;
   padding: 0;
@@ -33,6 +34,16 @@ a {
 
 }
 
+/*container*/
+
+.container {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Header*/
 .main-header {
   display:flex;
   margin-bottom: 10 px;
@@ -79,50 +90,13 @@ a {
   color: #ffffff;
 }
 
-.breadcrumbs {
-  display: flex;
-  width: auto;
-  margin: auto;
-  /*вот здесь вопрос, как лучше планировать сетку, я правильно думаю, что здесь должно быть рядом два блока, один для breadcrumbs, другой для часов работы и телефона?*/
-
-  font: inherit;
-  line-height: 16px;
-  font-size: 14px;
-}
-
-.page-title {
-  font-size: 35px;
-  line-height: 41px;
-  font-weight: bold;
-  text-align: left;
-  color: #ffffff;
-}
-
-/*здесь ссылка упорно не делается белой, что не так*/
-.shopping-cart-item a {
-  color: #ffffff;
-}
-
-.catalog {
-  width: auto;
-  justify-content: space-between;
-  margin: auto; /* или задавать по 27 справа и слева?*/
-  margin-top: 40 px;
-
-}
-
-.catalog-image-wrapper {
-  display: flex;
-  width: 267 px;
-  margin: auto; /* ну вот тут начались вопросы, как их строить в ряд и сверху вниз: с помощью first-chil, nth-child?*/
-}
-
+/*Index*/
 .about-us {
   display:flex;
   width: 1146 px;
   margin-top: auto;
   margin-bottom: 40px;
-  margin-right: 27px; /*не знаю, как лучше, писать здесь auto или задавать фиксированное значение?*/
+  margin-right: 27px;
   maring-left: 27px;
 
   color:#323232;
@@ -203,6 +177,76 @@ a {
 
 }
 
+/*Catalog*/
+.breadcrumbs {
+  display: flex;
+  width: auto;
+  margin: auto;
+
+  font: inherit;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.open-hours-and-phone {
+  display:flex;
+  position:absolute;
+  width: auto;
+  margin-top: 0;
+
+  font:inherit;
+}
+
+.phone {
+font: inherit;
+font-size: 22px;
+font-weight:bold;
+line-height: 24px;
+text-align: right;
+}
+
+.call-us {
+  font-size: 14px;
+  line-height: 16px;
+  text-align:right;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  text-align: left;
+  color: #ffffff;
+}
+
+.catalog-item a {
+  color: #ffffff;
+}
+
+.catalog {
+  width: auto;
+  justify-content: space-between;
+  margin: auto; /* или задавать по 27 справа и слева?*/
+  margin-top: 40 px;
+
+}
+
+.catalog-drop-down {
+  display: none;
+}
+
+
+.catalog-image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 267px;
+  margin: auto;
+}
+
+/*Footer*/
+
 .main-footer {
   display: flex;
   width: auto;
@@ -211,7 +255,8 @@ a {
 }
 .social-list {
   display: flex;
-  width: 180 px; /*ширину этих трех элементов я считала приблизительно, сложила ширину небольших элементов вместе*/
+  width: 180 px;
+  text-align: center;
   justify-content: space-between;
   margin-right: auto;
 }
@@ -243,7 +288,6 @@ a {
   display: flex;
   width: 190 px;
   margin-left: auto;
-  /*margin-right: ??? блок прижался к самому краю, нужно справа маргин задавать? Или общий маргин блоку задавать?*/
 }
 
 .footer-copyright a {
@@ -251,3 +295,40 @@ a {
   color: #ffffff;
   text-align:left;
 }
+
+/*modals and hidden*/
+
+.modal-subscribe {
+  display:none;
+}
+
+.login-form {
+  display:none;
+}
+
+.search {
+  display:none;
+}
+
+.visually-hidden {
+  display:none;
+}
+
+/*Visually hidden*/
+
+/*.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
