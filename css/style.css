@@ -38,9 +38,10 @@ a {
 
 .container {
   width: 1150px;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*Header*/
@@ -219,16 +220,35 @@ text-align: right;
   color: #ffffff;
 }
 
-.catalog-item a {
-  color: #ffffff;
-}
-
 .catalog {
   width: auto;
-  justify-content: space-between;
-  margin: auto; /* или задавать по 27 справа и слева?*/
+  margin: auto;
   margin-top: 40 px;
 
+}
+
+.catalog-image-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 267px;
+  margin: auto;
+}
+
+.catalog-item {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right:0;
+}
+
+.catalog-item a {
+  color: #ffffff;
 }
 
 .catalog-drop-down {
@@ -236,14 +256,7 @@ text-align: right;
 }
 
 
-.catalog-image-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
-  width: 267px;
-  margin: auto;
-}
 
 /*Footer*/
 
