@@ -243,9 +243,11 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .login-link {
   position: relative;
+  width: 93px;
+  height: 32px;
   padding: 5px;
-  background-color: rgba(255, 0, 0, 0.2);
-  border-radius: 50%;
+  background-color: rgba(132,157,143,0,2);
+  border-radius: 10px;
 }
 
 .login-link::before {
@@ -437,6 +439,10 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
   margin-right: 27px;
   margin-left: 27px;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 34px;
+  padding-bottom: 26px;
 
   color:#323232;
 
@@ -455,7 +461,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   line-height: 30px;
 }
-.about-us .about-us-list {
+.about-us.about-us-list {
   line-height: 22px;
 }
 
@@ -484,6 +490,8 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   width: 560px;
   margin-right: 13px;
+  padding-top: 24px;
+  padding-left: 19px;
 
   color: #5a5a5a;
   font-size: 16px;
